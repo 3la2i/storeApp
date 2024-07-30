@@ -5,7 +5,7 @@ const Home = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/products").then((response) => {
+    axios.get("http://localhost:5000/products").then((response) => {
       setProducts(response.data);
       
     });
